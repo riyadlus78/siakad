@@ -18,12 +18,16 @@ class Home extends BaseController
 
     public function dosen()
     {
-        return view('dosen/index');
+        helper('url');
+
+        return redirect()->to(site_url('dosen'));
     }
 
     public function matakuliah()
     {
-        return view('matakuliah/index');
+        helper('url');
+
+        return redirect()->to(site_url('mata-kuliah'));
     }
 
     public function tentang()
